@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    
+    <!--
+        Internal CSS
+        use style tag to specify CSS inside the same HTML file
+    -->
+    <style>
+        div{
+            color: purple;
+            background-color: powderblue;
+        }
+    </style>
+
+    <!--
+        External CSS
+        use link tag
+        relation -> style sheet
+        href -> path of CSS file
+    -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--
+        Inline CSS
+        use style tag to specify inline CSS
+    -->
+    <p style="background-color: hotpink;color:seagreen;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores!\
+    </p>
+
+
+    <!--Internal CSS Example-->
+    <div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, beatae.
+        </p>
+    </div>
+
+    <!--External CSS-->
+    <!--span is not a block element, so it consumes width of element inside-->
+    <span>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, harum?
+        </p>
+    </span>
+</body>
+</html>

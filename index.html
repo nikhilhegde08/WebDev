@@ -1,0 +1,145 @@
+<!--Press ! symbol to get HTML Boiler Plate in VSCode-->
+
+<!--DOCTYPE specifies that this is an HTML document-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta tag mentions about information about the page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The title appears on browser tab-->
+    <title>HTML Tutorial</title>
+</head>
+
+<!--All the HTML content goes inside body tag-->
+<body>
+
+    <!--Head tags with varying font sizes-->
+    <!--Larger the number, smaller the font-->
+    <!--Head tag displays in Bold-->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!--Paragraph tag-->
+    <!--To get dummy text press lorem<number of words> and hit Enter-->
+    <!--HTML does not consider newline in the source code-->
+    <p>Lorem ipsum 
+        dolor sit amet 
+        <!-- use br tag to put a line break or new line-->
+        <br>
+        <!--Use strong tag to bold the text-->
+        <strong>consectetur</strong>
+        <!--Use em tag to italicize the text-->
+        <em>adipisicing</em>
+        elit.
+    </p>
+    <!--use hr tag to put horizontal line-->
+    <hr>
+
+    <!--use anchor tag for hyperlink-->
+    <!--use taget attribute to open in new tab-->
+    <a href="https://google.com" target="blank">Go to Google</a> <br>
+
+    <!--HTML un-ordered list-->
+    <!--
+        type attribute takes circle, disc and square
+    -->
+    <ul type="circle">
+        <li>item1</li>
+        <li>item3</li>
+        <li>item3</li>
+    </ul>
+
+    <!--HTML ordered list-->
+    <!--
+        type attribute takes 1, i, I, a
+    -->
+    <ol type="1">
+        <li>item1</li>
+        <li>item3</li>
+        <li>item3</li>
+    </ol>
+
+    <!--
+        image tag to display image
+        alt shows the text if image not displayed
+    -->
+    <img src="https://picsum.photos/200/300" alt="Random Image">
+
+
+    <!--HTML Table-->
+    <!--
+        HTML Table contains thead and tbody
+        thead contains tr(row) with th(colums)
+        tbody contains tr(row) with td(colums/data)
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>header1</th>
+                <th>header2</th>
+                <th>header3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td>data3</td>
+            </tr>
+            <tr>
+                <td>data4</td>
+                <td>data5</td>
+                <td>data6</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!--HTML Form-->
+    <form action="">
+        <!--
+            div tag is a block element which consumes whole width
+            so next element displayed on new line
+        -->
+        <!--HTML Textbox-->
+        <div>Textbox: <input type="text" name="" id=""></div>
+
+        <!--HTML Number-->
+        <div>Number: <input type="number" name="" id=""></div>
+
+        <!--HTML Date-->
+        <div>Date: <input type="date" name="" id=""></div>
+
+        <!--HTML Email-->
+        <div>Email: <input type="email" name="" id=""></div>
+
+        <!--HTML Checkbox-->
+        <div>Checkbox: <input type="checkbox" name="" id=""></div>
+
+        <!--HTML Radio Button-->
+        <div>
+            <!--name should be same for radio button for single choice-->
+            radio button1:<input type="radio" name="radio" id="">
+            radio button2:<input type="radio" name="radio" id="">
+        </div>
+
+    </form>
+
+    <!--Display Form Entities-->
+    <p>This is &lt;p&gt; tag</p>
+    <p>This is INR: &#8377;</p>
+
+    <!--Examples for Semantic Web tags-->
+    <details>
+        <!--summary is displayed-->
+        <summary>Lorem ipsum dolor sit amet.</summary>
+        <!--The below text is not displayed, needs to be expanded-->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, earum.
+    </details>
+</body>
+</html>
