@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            background-color: greenyellow;
+            height: 4000px;
+        }
+        .box{
+            /* displays the elements in one line */
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        /* 
+        CSS Positions 
+
+        1. static: default value, moves with scrolling
+        2. relative: relative to the parent element, moves with scrolling
+        3. absolute: relative to browser window (0,0), moves with scrolling
+        4. fixed: fixed w.r.t browser window or view port, does not move with scrolling
+        5. sticky: sticks w.r.t parent element, does not move with scrolling
+        */
+
+        #box1{
+            position: static;
+        }
+
+        #box2{
+            position: relative;
+            top: 30px;
+            left: 30px;
+
+        }
+        #box3{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        #box4{
+            position: fixed;
+            bottom:2px;
+            right: 2px;
+        }
+        #box5{
+            position: sticky;
+            top:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1-static</div>
+        <div class="box" id="box2">2-relative</div>
+        <div class="box" id="box3">3-absolute</div>
+        <div class="box" id="box4">4-fixed</div>
+        <div class="box" id="box5">5-sticky</div>
+    </div>
+</body>
+</html>
