@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+
+    <!-- Importing Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+
+    <style>
+        /* 
+        Types of Fonts
+        1. Web-Safe Fonts: pre-installed with most of the OS, does not require importing remote style sheet
+        2. Web-Fonts: requires importing remote style sheet
+        */
+        p{
+            /* 
+            font family can be specified in font stack format(comma separated)
+            browser checks for presence of the font from the left and renders it
+            */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 23px;
+        }
+        #webSafe{
+            font-weight: bold;
+            font-style: italic;
+        }
+        #webFont{
+            font-family: 'Short Stack', cursive;
+        }
+    </style>
+</head>
+<body>
+    <h4>CSS Fonts</h4>
+    <p>Lorem ipsum dolor sit amet <span id="webSafe">consectetur</span> adipisicing elit. <span id="webFont">Repudiandae</span>, vel!</p>    
+</body>
+</html>
